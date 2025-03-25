@@ -11,15 +11,15 @@
         }
       },
       "root": "",
-      "sourceRoot": "src",
+      "sourceRoot": "Frontend/src",    
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/cua-hang-xe-dap",
-            "index": "src/index.html",
-            "browser": "src/main.ts",
+            "index": "Frontend/src/index.html",
+            "browser": "Frontend/src/main.ts",
             "polyfills": [
               "zone.js"
             ],
@@ -32,13 +32,13 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "Frontend/src/styles.scss"
             ],
             "scripts": [],
-            "server": "src/main.server.ts",
+            "server": "Frontend/src/main.server.ts",
             "prerender": true,
             "ssr": {
-              "entry": "src/server.ts"
+              "entry": "Frontend/src/server.ts"
             }
           },
           "configurations": {
@@ -96,12 +96,15 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "Frontend/src/styles.scss"
             ],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
